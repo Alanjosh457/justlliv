@@ -19,11 +19,14 @@ const Homepage = () => {
   const logo='http://res.cloudinary.com/dgkcgjcw5/image/upload/v1740207081/qelcvtoqgefcdmzsu09a.png'
   const inst='http://res.cloudinary.com/dgkcgjcw5/image/upload/v1740207702/cvj6zwwzyllkbllmmgfx.png'
   const lin='http://res.cloudinary.com/dgkcgjcw5/image/upload/v1740209303/g8jrzuhd6urhqvugwkbf.png'
+  const herom='http://res.cloudinary.com/dgkcgjcw5/image/upload/v1740220026/w6ndfqioguafwwqymuyl.png'
+  const gsm='http://res.cloudinary.com/dgkcgjcw5/image/upload/v1740224750/hifq1rewkubiivewfygf.png'
 
   return (
     <>
       <div className={styles.firstimg}>
-        <img src={hero} className={styles.hero1} alt="Hero Image" />
+      <img src={hero} className={`${styles.hero1} ${styles.desktopImg}`} alt="Hero Image" />
+      <img src={herom} className={`${styles.hero1} ${styles.mobileImg}`} alt="Mobile Hero Image" />
         <div className={styles.fig}>
           <h2 className={styles.hs22}>
             Your Child's Perfect Schedule <br className="hidden sm:block" /> in Just a Few Clicks
@@ -207,7 +210,8 @@ Our Mission
      
 <div className={styles.cont6}>
   <div className={styles.gs5}>
-<img src={gs} className={styles.gs1}></img>
+  <img src={gs} className={`${styles.gs1} ${styles.desktopgs}`} alt="Hero Image" />
+      <img src={gsm} className={`${styles.gs1} ${styles.mobilegs}`} alt="Mobile Hero Image" />
 <div className={styles.gs8}>
 <h1 className={styles.hs7}>Ready to Simplify Your Life?</h1>
 <p className={styles.ps6}>Be the first to know when we launch! Join our waiting list and get exclusive updates and early access to our journey.</p>
